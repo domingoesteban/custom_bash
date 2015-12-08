@@ -18,5 +18,4 @@ You can propose any [suggestion/improvement](https://github.com/domingoesteban/d
 
 | [![twitter/domingo](http://gravatar.com/avatar/0287175af4b47a52df1aac6cf224319c?s=100)](http://twitter.com/domingoesteban "Follow @domingoesteban on Twitter") |
 |---|
-| [Domingo Esteban](http://domingoesteban.com/){:target="_blank"} |
 | <a href="http://domingoesteban.com/" target="_blank">Domingo Esteban</a> |
