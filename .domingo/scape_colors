@@ -21,5 +21,5 @@ SCAPE_NC='\033[0m'
 
 # Functions
 echo_color () {
-	echo "$2$1$SCAPE_NC"
+	echo -e "$2$1$SCAPE_NC"
 }

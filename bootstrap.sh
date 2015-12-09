@@ -5,14 +5,17 @@
 ##############################################################################################
 
 # Useful variables
-CURRENT_DIR=`pwd`
-. .domingo/scape_colors
-. .domingo/useful_functions
+OLD_DOT_DIR='dotfiles_old'
+CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+OLD_DOT_PATH=$CURRENT_PATH/$OLD_DOT_DIR
 
-echo_color "Running bootstrap.sh in $CURRENT_DIR" $SCAPE_BLUE
+. $CURRENT_PATH/.domingo/scape_colors
+. $CURRENT_PATH/.domingo/useful_functions
+
+echo_color "Running bootstrap.sh in $CURRENT_PATH" $SCAPE_BLUE
 
 # Pull repository
-cd $CURRENT_DIR;
+cd $CURRENT_PATH;
 confirm "$(echo_color "Would you want to pull the current repository?" $SCAPE_BRED)" && git pull origin master;
 
 #TODO
