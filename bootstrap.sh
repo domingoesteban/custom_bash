@@ -6,6 +6,8 @@
 
 # Useful variables
 OLD_DOT_DIR='dotfiles_old'
+#TODO: Check if this is better option:
+#CURRENT_PATH=$(dirname $(readlink --canonicalize --no-newline $BASH_SOURCE))
 CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 OLD_DOT_PATH=$CURRENT_PATH/$OLD_DOT_DIR
 
