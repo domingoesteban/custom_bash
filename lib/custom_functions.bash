@@ -3,11 +3,11 @@
 
 function _load_custom_bash_files() {
   subdirectory="$1"
-  if [ ! -d "${CUSTOM_BASH}/${subdirectory}" ]
+  if [ ! -d "${CUSTOM_BASH}/${subdirectory}/up" ]
   then
     continue
   fi
-  FILES="${CUSTOM_BASH}/${subdirectory}/*.bash"
+  FILES="${CUSTOM_BASH}/${subdirectory}/up/*.bash"
   for config_file in $FILES
   do
     if [ -e "${config_file}" ]; then

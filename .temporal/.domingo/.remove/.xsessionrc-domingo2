@@ -1,0 +1,11 @@
+#!/bin/bash
+firefox & 		#Open firefox in the 0th workspace
+mendeleydesktop & 	#Open mendeley too
+thunderbird & 		
+spotify &
+sleep 5
+wmctrl -r firefox -t 1 &
+wmctrl -r mendeleydesktop -t 1 &
+wmctrl -r thunderbird -t 2 &
+wmctrl -r spotify -t 3 &
+wmctrl -s 0 		#You will be left at this workspace when the script finishes executing

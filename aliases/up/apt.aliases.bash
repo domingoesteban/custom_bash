@@ -22,6 +22,8 @@ function _set_pkg_aliases()
 		alias chkboot='cat /var/run/reboot-required'
 
 		alias pkgfiles='dpkg --listfiles'
+
+        alias aptiupdupg='sudo aptitude update && sudo aptitude safe safe-upgrade'
 	fi
 }
 

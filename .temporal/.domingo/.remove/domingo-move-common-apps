@@ -1,0 +1,10 @@
+#!/bin/bash
+wmctrl -r Firefox -t 1 &
+wmctrl -r Mendeley Desktop -t 1 &
+sleep 1
+wmctrl -r Thunderbird -t 2 &
+sleep 1
+wmctrl -r domingoesteban - Skype™ -t 3 &
+sleep 1
+wmctrl -r Spotify Free - Linux Preview -t 3 &
+wmctrl -s 0 		#You will be left at this workspace when the script finishes executing

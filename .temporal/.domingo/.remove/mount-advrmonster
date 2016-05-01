@@ -1,0 +1,32 @@
+#!/bin/bash
+DIRECTORY=~/advrmonster
+
+SCAPE_BLACK='\033[0;30m'
+SCAPE_BGRAY='\033[1;30m'
+SCAPE_RED='\033[0;31m'
+SCAPE_BRED='\033[1;31m'
+SCAPE_GREEN='\033[0;32m'
+SCAPE_BGREEN='\033[1;32m'
+SCAPE_YELLOW='\033[0;33m'
+SCAPE_BYELLOW='\033[1;33m'
+SCAPE_BLUE='\033[0;34m'
+SCAPE_BBLUE='\033[1;34m'
+SCAPE_PURPLE='\033[0;35m'
+SCAPE_BPURPLE='\033[1;35m'
+SCAPE_CYAN='\033[0;36m'
+SCAPE_BCYAN='\033[1;36m'
+SCAPE_WHITE='\033[0;37m'
+SCAPE_BWHITE='\033[1;37m'
+
+SCAPE_NC='\033[0m'
+
+echo -e "${SCAPE_BYELLOW}1. Checking if it exists '$DIRECTORY' directory${SCAPE_NC}"
+if [ ! -d $DIRECTORY ]; then
+	echo -e "Creating advrmonster directory..."
+	mkdir "$DIRECTORY"
+	echo -e "Directory created"
+else
+	echo -e "Directory advrmonster already exists..."
+fi
+
+echo -e "${SCAPE_BYELLOW}2. Mounting advrmonster/desteban home directory${SCAPE_NC}"
