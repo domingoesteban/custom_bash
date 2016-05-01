@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MY_BASH="$(cd "$(dirname "$0")" && pwd)"
+CUSTOM_BASH="$(cd "$(dirname "$0")" && pwd)"
 
 # Check the OS that is running
 if [ "$OSTYPE" != "linux-gnu2" ]; then
@@ -13,7 +13,7 @@ if [ "$OSTYPE" != "linux-gnu2" ]; then
 fi
 
 echo ""
-echo "Installing my_bash++ in $OSTYPE"
+echo "Installing custom_bash in $OSTYPE"
 CONFIG_FILE=.bashrc
 BACKUP_FILE=$CONFIG_FILE.bak
 

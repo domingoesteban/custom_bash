@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ -z "$MY_BASH" ];
 then
-  MY_BASH="$HOME/.my_bash++"
+  MY_BASH="$HOME/.custom_bash"
 fi
 
 # Check the OS that is running
@@ -15,7 +15,7 @@ if [ "$OSTYPE" != "linux-gnu" ]; then
 fi
 
 echo ""
-echo "Uninstalling my_bash++ in $OSTYPE ..."
+echo "Uninstalling custom_bash in $OSTYPE ..."
 CONFIG_FILE=.bashrc
 BACKUP_FILE=$CONFIG_FILE.bak
 
