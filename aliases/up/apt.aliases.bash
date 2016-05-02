@@ -23,7 +23,7 @@ function _set_pkg_aliases()
 
 		alias pkgfiles='dpkg --listfiles'
 
-        alias aptiupdupg='sudo aptitude update && sudo aptitude safe safe-upgrade'
+    alias aptiupdupg='sudo aptitude update && sudo aptitude safe-upgrade'
 	fi
 }
 
